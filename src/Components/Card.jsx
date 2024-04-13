@@ -1,27 +1,85 @@
 import React from 'react';
-// import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 import { Card, Button } from 'antd';
 
-const { Meta } = Card;
-
 const Carddata = () => {
+    const cardStyle = {
+        width: 300,
+        margin: '40px 30px 10px 30px',
+
+    }
     return (
-        <Card style={{width:300}}
-            cover={
-                <img 
-                    alt="example" 
-                    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png" 
-                />}
-            actions={[
-                <Button type='primary'>แก้ไข</Button>,
-                <Button type='primary' danger>ลบ</Button>,
-            ]}
-        >
-            <Meta 
-                title="Card title" 
-                description="this is des"
-            />
-        </Card>
+        <div style={{display:'flex', flexWrap:'wrap',justifyContent:'center'}}>
+            <Card
+                title="ทะเบียนรถยนต์ : กอ 2000"
+                bordered={false}
+                style={cardStyle}
+                actions={[
+                    <Button type="primary">ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button type="default">ดูข้อมูลเพิ่มเติม</Button>
+                ]}
+            >
+                <p>ยี่ห้อรถ : Toyota</p>
+                <p>รุ่นรถ : Yaris Cross</p>
+                <p>หมายเหตุ : </p>
+                <p>etc...</p>
+            </Card>
+            <Card
+                title="ทะเบียนรถยนต์ : กอ 2100"
+                bordered={false}
+                style={cardStyle}
+                actions={[
+                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                ]}
+            >
+                <p>ยี่ห้อรถ : Honda</p>
+                <p>รุ่นรถ : City</p>
+                <p>หมายเหตุ : </p>
+                <p>etc...</p>
+            </Card>
+            <Card
+                title="ทะเบียนรถยนต์ : กอ 2200"
+                bordered={false}
+                style={cardStyle}
+                actions={[
+                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                ]}
+            >
+                <p>ยี่ห้อรถ : Masda</p>
+                <p>รุ่นรถ : Mazda2</p>
+                <p>หมายเหตุ : </p>
+                <p>etc...</p>
+            </Card>
+            <Card
+                title="ทะเบียนรถยนต์ : กอ 2300"
+                bordered={false}
+                style={cardStyle}
+                actions={[
+                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                ]}
+            >
+                <p>ยี่ห้อรถ : Ford</p>
+                <p>รุ่นรถ : Raptor</p>
+                <p>หมายเหตุ : </p>
+                <p>etc...</p>
+            </Card>
+            <Card
+                title="ทะเบียนรถยนต์ : กอ 2300"
+                bordered={false}
+                style={cardStyle}
+                actions={[
+                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                ]}
+            >
+                <p>ยี่ห้อรถ : Ford</p>
+                <p>รุ่นรถ : Raptor</p>
+                <p>หมายเหตุ : </p>
+                <p>etc...</p>
+            </Card>
+        </div>   
     );
 };
 
