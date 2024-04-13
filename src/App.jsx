@@ -1,24 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Card from './Components/Card';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import ViewAllInformation from './page/Viewall';
+import AddInformation from './page/Adddata';
 
 const App = () => {
-  return (
-    <Router>
-      <div>
-        <Navbar/>
-        <Switch>
-          <Route path='/' Component={} />
-          <Route path='/'Component={} />
-        </Switch>
-      </div>
-    </Router>
-    // <div>
-    //   <Navbar/>
-    //   <Card/>
-    // </div>
-  );
+    const [currentPage, setCurrentPage] = useState('viewall');
+
+    const navigateToPage = (page) => {
+        setCurrentPage(page);
+    };
+
+    return (
+        <div>
+            <Navbar navigateToPage={navigateToPage} />
+            {currentPage === 'viewall' && <ViewAllInformation />}
+            {currentPage === 'add' && <AddInformation />}
+        </div>
+    );
 }
 
 export default App;
+
+
+
+
+

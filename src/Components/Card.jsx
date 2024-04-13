@@ -5,7 +5,6 @@ const Carddata = () => {
     const cardStyle = {
         width: 300,
         margin: '40px 30px 10px 30px',
-
     }
     return (
         <div style={{display:'flex', flexWrap:'wrap',justifyContent:'center'}}>
@@ -14,8 +13,8 @@ const Carddata = () => {
                 bordered={false}
                 style={cardStyle}
                 actions={[
-                    <Button type="primary">ดูข้อมูลเพิ่มเติม</Button>,
-                    <Button type="default">ดูข้อมูลเพิ่มเติม</Button>
+                    <Button key="primary" type="primary">ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button key="default" type="default">ดูข้อมูลเพิ่มเติม</Button>
                 ]}
             >
                 <p>ยี่ห้อรถ : Toyota</p>
@@ -28,8 +27,8 @@ const Carddata = () => {
                 bordered={false}
                 style={cardStyle}
                 actions={[
-                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
-                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                    <Button key="primary" type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button key="default" type='default'>ดูข้อมูลเพิ่มเติม</Button>
                 ]}
             >
                 <p>ยี่ห้อรถ : Honda</p>
@@ -42,40 +41,12 @@ const Carddata = () => {
                 bordered={false}
                 style={cardStyle}
                 actions={[
-                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
-                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
+                    <Button key="primary" type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
+                    <Button key="default" type='default'>ดูข้อมูลเพิ่มเติม</Button>
                 ]}
             >
                 <p>ยี่ห้อรถ : Masda</p>
                 <p>รุ่นรถ : Mazda2</p>
-                <p>หมายเหตุ : </p>
-                <p>etc...</p>
-            </Card>
-            <Card
-                title="ทะเบียนรถยนต์ : กอ 2300"
-                bordered={false}
-                style={cardStyle}
-                actions={[
-                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
-                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
-                ]}
-            >
-                <p>ยี่ห้อรถ : Ford</p>
-                <p>รุ่นรถ : Raptor</p>
-                <p>หมายเหตุ : </p>
-                <p>etc...</p>
-            </Card>
-            <Card
-                title="ทะเบียนรถยนต์ : กอ 2300"
-                bordered={false}
-                style={cardStyle}
-                actions={[
-                    <Button type='primary'>ดูข้อมูลเพิ่มเติม</Button>,
-                    <Button type='default'>ดูข้อมูลเพิ่มเติม</Button>
-                ]}
-            >
-                <p>ยี่ห้อรถ : Ford</p>
-                <p>รุ่นรถ : Raptor</p>
                 <p>หมายเหตุ : </p>
                 <p>etc...</p>
             </Card>

@@ -3,7 +3,7 @@ import { Layout, Menu } from "antd";
 
 const {Header} = Layout;
 
-const Navbar = () => {
+const Navbar = ({navigateToPage}) => {
     const headerStyle = {
         backgroundColor: '#FFF',
         width: '100%',
@@ -13,8 +13,8 @@ const Navbar = () => {
     return(
         <Header style={headerStyle}>
             <Menu mode="horizontal" defaultOpenKeys={[1]}>
-                <Menu.Item key="1" >View all information</Menu.Item>
-                <Menu.Item key="2" >Add information</Menu.Item>
+                <Menu.Item key="1" onClick={() => navigateToPage('viewall')}>View all information</Menu.Item>
+                <Menu.Item key="2" onClick={() => navigateToPage('add')}>Add information</Menu.Item>
             </Menu>
         </Header>
     )
